@@ -1,0 +1,13 @@
+.button {
+  color: $pale-blue;
+  background-color: $dark-gray-blue;
+  border-radius: 35px;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.button:hover {
+  background-image: $main-gradient;
+}

@@ -1,0 +1,53 @@
+@media only screen and (max-width: 425px) {
+  .card {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+
+    .result {
+      border-radius: 0 0 15px 15px;
+      padding: 10%;
+
+      .insight {
+        header {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .circle-summary {
+        .number-big {
+          margin-top: 20%;
+          font-size: 50px;
+        }
+
+        .number-small {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .stats {
+      font-size: 15px;
+
+      .stat {
+        padding: 15px;
+      }
+    }
+
+    .button {
+      font-size: 15px;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .summary {
+    padding: 0;
+  }
+}

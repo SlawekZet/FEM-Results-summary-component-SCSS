@@ -1,0 +1,63 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 25px;
+
+  .stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+
+  .reaction {
+    background-color: $light-red-bg;
+  }
+
+  .memory {
+    background-color: $orangey-yellow-bg;
+  }
+
+  .verbal {
+    background-color: $green-teal-bg;
+  }
+
+  .visual {
+    background-color: $cobalt-blue-bg;
+  }
+
+  .icon-name {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img {
+      scale: 75%;
+    }
+
+    .reaction-name {
+      color: $light-red;
+    }
+
+    .memory-name {
+      color: $orangey-yellow;
+    }
+
+    .verbal-name {
+      color: $green-teal;
+    }
+
+    .visual-name {
+      color: $cobalt-blue;
+    }
+  }
+
+  .number-light {
+    color: $light-gray-blue;
+  }
+}

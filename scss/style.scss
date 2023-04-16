@@ -1,0 +1,99 @@
+@import "config";
+@import "stats";
+@import "buttons";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $white;
+  font-family: $font;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 1.5rem;
+}
+
+h1 {
+  font-size: 17px;
+  color: $light-lavender;
+  padding-bottom: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 12px 12px 50px 1px rgba(0, 0, 255, 0.1);
+
+  .result {
+    border-radius: 15px;
+    background-image: $main-gradient;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10% 15% 15% 15%;
+    color: $white;
+
+    .circle-summary {
+      border-radius: 50%;
+      background-image: $circle-gradient;
+      width: 130px;
+      height: 130px;
+
+      .number-big {
+        margin-top: 25%;
+        font-weight: 800;
+        font-size: 45px;
+      }
+
+      .number-small {
+        font-weight: 500;
+        font-size: 13px;
+        color: $light-lavender;
+        opacity: 60%;
+      }
+    }
+
+    .insight {
+      margin-top: 5px;
+
+      header {
+        font-size: 20px;
+        padding: 15px 0;
+      }
+
+      p {
+        font-size: 12px;
+        color: $light-lavender;
+      }
+    }
+  }
+
+  .summary {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10% 10% 12% 10%;
+    color: $dark-gray-blue;
+
+    h1 {
+      color: $dark-gray-blue;
+    }
+  }
+}
+
+@import "mobile";
